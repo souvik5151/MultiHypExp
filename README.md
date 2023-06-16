@@ -10,6 +10,7 @@ It requires the following packages as dependencies.
 * [CANONICA](https://github.com/christophmeyer/CANONICA)
 * [HYPERDIRE](https://sites.google.com/site/loopcalculations/)
 * [PolyLogTools](https://gitlab.com/pltteam/plt/-/tree/master)
+* [HPL](https://www.physik.uzh.ch/data/HPL/)
 
 
 **Installation**

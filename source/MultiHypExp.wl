@@ -141,7 +141,7 @@ Off[ParallelCombine::mopar1];ParallelEvaluate[Off[ParallelCombine::mopar1]];
 Begin["`Private`"]
 
 
-(* ::Section:: *)
+(* ::Section::Closed:: *)
 (*ReduceFunction*)
 
 
@@ -242,7 +242,7 @@ result = Normal[Series[Total[result],{e,0,0}]];
 Return[result/.MapThread[Rule,{If[Length[Variables]===2,{x,y},{x,y,z}],Variables}]]]
 
 
-(* ::Section:: *)
+(* ::Section::Closed:: *)
 (*Common commands 	*)
 
 
@@ -310,7 +310,7 @@ ShiftedSeries[indices_, exp_, e_Symbol]:=Module[{serinfo},
   ];
 
 
-(* ::Section:: *)
+(* ::Section::Closed:: *)
 (*Operators	*)
 
 
@@ -360,7 +360,7 @@ Print["Differential operator has pole in e of order : ", Abs[Min[temp1[[All,4]]]
 Return[{Abs[Min[temp1[[All,4]]]],result}];];
 
 
-(* ::Section:: *)
+(* ::Section::Closed:: *)
 (*ToPfaff system	*)
 
 
@@ -504,7 +504,7 @@ Return[ParallelMap[Simplify,mat2/.replacements]];
 ];
 
 
-(* ::Section:: *)
+(* ::Section::Closed:: *)
 (*SolvePfaffSystem*)
 
 
@@ -730,7 +730,7 @@ Return[{lowestorder,result1/.SeriesCoefficient[a_,n_Integer]/;FreeQ[a,e]&&n>=1->
 ];
 
 
-(* ::Section:: *)
+(* ::Section::Closed:: *)
 (*ApplyOperators*)
 
 
@@ -787,11 +787,23 @@ PrintTemporary["Operators are obtained"];
 (*Print[step4];*)
 (*Print[step4[[2]]];*)
 ind=ToSeriesData[#,e,1]&/@(Series[#,{e,0,0}]&/@(step4[[2,1,All,1]]));
-(*Print[ind];*)
+(*Print[ind];
+Print[Abs[Min[#[[-3]]&/@ind]]];*)
+(*N0 is same as lowest order*)
+(*N0=Abs[Min[ind[[All,4]]]];
+p0=N0+p-1;*)
+
 N0=Abs[Min[#[[-3]]&/@ind]];
+p0=N0+p;
+(*If[p0===0,p0=1];*)
+
+(*Print[{N0,p0}];*)
+
+
+(*N0=Abs[Min[#[[-3]]&/@ind]];
 p0=N0+p-1;
 If[p0===0,p0=1];
-If[p0>6,p0=6];
+If[p0>6,p0=6];*)
 (*Print[p0];*)
 (*Print[{N0,p0}];*)
 (*Here make changes*)

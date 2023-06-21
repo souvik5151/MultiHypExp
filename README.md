@@ -2,7 +2,8 @@
 
 A *Mathematica* package for finding the series expansion of multivariate hypergeometric functions. It is based on the work :
 
-[ϵ-expansion of multivariable hypergeometric functions appearing in Feynman integral calculus](https://www.sciencedirect.com/science/article/pii/S0550321323000743?via%3Dihub)
+* [ϵ-expansion of multivariable hypergeometric functions appearing in Feynman integral calculus](https://www.sciencedirect.com/science/article/pii/S0550321323000743?via%3Dihub)
+* [***MultiHypExp*** : A Mathematica Package For Expanding Multivariate Hypergeometric Functions In Terms Of Multiple Polylogarithms](https://arxiv.org/abs/2306.11718v1)
 
 It requires the following packages as dependencies.
 

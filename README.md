@@ -16,7 +16,7 @@ It requires the following packages as dependencies.
 
 **Installation**
 
-After setting the path of all the dependencies, the package ***MultiHypExp*** can be called as using the *Get* command of *Mathematica* as
+After setting the path of all the dependencies, the package ***MultiHypExp*** can be called using the *Get* command of *Mathematica* as
 
 ```
 <<MultiHypExp.wl

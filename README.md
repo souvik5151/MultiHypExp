@@ -43,8 +43,9 @@ The package *MultiHypExp.wl* is located in ./source folder.
 **Example files**
 
 
-Four example notebooks are provided with the package which contains several examples of one, two and three variable hypergeometric functions.
-1. Examples_One_variable.nb
-2. Examples_Two_variable_v1.nb 
-3. Examples_Two_variable_v2.nb
-4. Examples_Three_variable.nb
+Five example notebooks are provided with the package which contains several examples of one, two and three variable hypergeometric functions.
+1. Manual.nb
+2. Examples_One_variable.nb
+3. Examples_Two_variable_v1.nb 
+4. Examples_Two_variable_v2.nb
+5. Examples_Three_variable.nb
